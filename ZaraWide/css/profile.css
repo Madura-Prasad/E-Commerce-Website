@@ -1,0 +1,297 @@
+/* =============================== */
+/* ======= User Info Table ======= */
+/* =============================== */
+body {
+  background: #EAEAEA;
+}
+
+.profile {
+  z-index: 0 !important;
+}
+.profile .account-info {
+  line-height: 1.7 !important;
+}
+.profile .user-details {
+  width: 50%;
+  position: relative;
+  padding: 0;
+}
+.profile .user-details .user-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+.profile .user-image img {
+  clear: both;
+  margin: auto;
+  position: relative;
+}
+.profile .user-details .user-info-block {
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  background: white;
+  z-index: 0;
+  padding-top: 35px;
+}
+.profile .user-info-block .user-heading {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 0;
+}
+.profile .user-info-block .navigation {
+  width: 100%;
+  margin: 0;
+  padding: 18px 0;
+  list-style: none;
+  border-bottom: 1px solid #428BCA;
+  border-top: 1px solid #428BCA;
+  text-align: center;
+  padding: 18px 0;
+  text-align: center;
+}
+.profile .navigation li {
+  display: inline;
+}
+.profile .navigation li a {
+  padding: 20px 30px;
+  text-decoration: none;
+}
+.profile .navigation li.active a {
+  background: #428BCA;
+  color: #fff;
+}
+.profile .user-info-block .user-body {
+  float: left;
+  padding: 5%;
+  width: 90%;
+}
+.profile .user-body .tab-content > div {
+  float: left;
+  width: 100%;
+}
+.profile .user-body .tab-content h4 {
+  width: 100%;
+  margin: 10px 0;
+  color: #333;
+}
+.profile .glyphicon-send {
+  padding-left: 2.5%;
+}
+.profile .user-edit-info {
+  width: 180% !important;
+}
+.profile .user-edit-info#help {
+  width: 110% !important;
+}
+.profile .user-edit-info .float-label-control {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+.profile .user-edit-info .float-label-control ::-webkit-input-placeholder {
+  color: transparent;
+}
+.profile .user-edit-info .float-label-control :-moz-placeholder {
+  color: transparent;
+}
+.profile .user-edit-info .float-label-control ::-moz-placeholder {
+  color: transparent;
+}
+.profile .user-edit-info .float-label-control :-ms-input-placeholder {
+  color: transparent;
+}
+.profile .user-edit-info .float-label-control input:-webkit-autofill,
+.profile .user-edit-info .float-label-control textarea:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -moz-box-shadow: 0 0 0 1000px white inset !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+}
+.profile .user-edit-info .float-label-control input, .profile .user-edit-info .float-label-control textarea, .profile .user-edit-info .float-label-control label {
+  font-size: 1.3em;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.profile .user-edit-info .float-label-control input:focus,
+.profile .user-edit-info .float-label-control textarea:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom-width: 2px;
+  padding-bottom: 0;
+}
+.profile .user-edit-info .float-label-control textarea:focus {
+  padding-bottom: 4px;
+}
+.profile .user-edit-info .float-label-control input, .profile .user-edit-info .float-label-control textarea {
+  display: block;
+  width: 100%;
+  padding: 0.1em 0em 1px 0em;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #aaa;
+  outline: none;
+  margin: 0px;
+  background: none;
+}
+.profile .user-edit-info .float-label-control textarea {
+  padding: 0.1em 0em 5px 0em;
+}
+.profile .user-edit-info .float-label-control label {
+  position: absolute;
+  font-weight: normal;
+  top: -1em;
+  left: 0.08em;
+  color: #aaaaaa;
+  z-index: -1;
+  font-size: 0.85em;
+  -moz-animation: float-labels 300ms none ease-out;
+  -webkit-animation: float-labels 300ms none ease-out;
+  -o-animation: float-labels 300ms none ease-out;
+  -ms-animation: float-labels 300ms none ease-out;
+  -khtml-animation: float-labels 300ms none ease-out;
+  animation: float-labels 300ms none ease-out;
+  /* There is a bug sometimes pausing the animation. This avoids that.*/
+  animation-play-state: running !important;
+  -webkit-animation-play-state: running !important;
+}
+.profile .user-edit-info .float-label-control input.empty + label,
+.profile .user-edit-info .float-label-control textarea.empty + label {
+  top: 0.1em;
+  font-size: 1.5em;
+  animation: none;
+  -webkit-animation: none;
+}
+.profile .user-edit-info .float-label-control input:not(.empty) + label,
+.profile .user-edit-info .float-label-control textarea:not(.empty) + label {
+  z-index: 1;
+}
+.profile .user-edit-info .float-label-control input:not(.empty):focus + label,
+.profile .user-edit-info .float-label-control textarea:not(.empty):focus + label {
+  color: #aaaaaa;
+}
+.profile .user-edit-info .float-label-control.label-bottom label {
+  -moz-animation: float-labels-bottom 300ms none ease-out;
+  -webkit-animation: float-labels-bottom 300ms none ease-out;
+  -o-animation: float-labels-bottom 300ms none ease-out;
+  -ms-animation: float-labels-bottom 300ms none ease-out;
+  -khtml-animation: float-labels-bottom 300ms none ease-out;
+  animation: float-labels-bottom 300ms none ease-out;
+}
+.profile .user-edit-info .float-label-control.label-bottom input:not(.empty) + label,
+.profile .user-edit-info .float-label-control.label-bottom textarea:not(.empty) + label {
+  top: 3em;
+}
+@keyframes float-labels {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em;
+  }
+  20% {
+    font-size: 1.5em;
+    opacity: 0;
+  }
+  30% {
+    top: 0.1em;
+  }
+  50% {
+    opacity: 0;
+    font-size: 0.85em;
+  }
+  100% {
+    top: -1em;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes float-labels {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em;
+  }
+  20% {
+    font-size: 1.5em;
+    opacity: 0;
+  }
+  30% {
+    top: 0.1em;
+  }
+  50% {
+    opacity: 0;
+    font-size: 0.85em;
+  }
+  100% {
+    top: -1em;
+    opacity: 1;
+  }
+}
+@keyframes float-labels-bottom {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em;
+  }
+  20% {
+    font-size: 1.5em;
+    opacity: 0;
+  }
+  30% {
+    top: 0.1em;
+  }
+  50% {
+    opacity: 0;
+    font-size: 0.85em;
+  }
+  100% {
+    top: 3em;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes float-labels-bottom {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em;
+  }
+  20% {
+    font-size: 1.5em;
+    opacity: 0;
+  }
+  30% {
+    top: 0.1em;
+  }
+  50% {
+    opacity: 0;
+    font-size: 0.85em;
+  }
+  100% {
+    top: 3em;
+    opacity: 1;
+  }
+}
+
+/* ========= FOOTER ======== */
+footer.bottom-footer {
+  position: absolute;
+  clear: both !important;
+  z-index: 999999 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+footer.bottom-footer hr {
+  margin-top: 150px !important;
+}
+footer.bottom-footer .brand-name {
+  font-family: "Bitter", serif;
+}
+footer.bottom-footer a {
+  background-color: transparent;
+  padding-left: 316px;
+}

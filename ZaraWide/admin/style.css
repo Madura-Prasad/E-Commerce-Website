@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    background: #E5E7EB;
+    display: flex;
+}
+
+#menu {
+    background-color: #111827;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 30px 0 0 30px;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+#menu .items {
+    margin-top: 10px;
+}
+
+#menu .items li {
+    list-style: none;
+    pad: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover {
+    background: #253047;
+    cursor: pointer;
+}
+
+
+/*#menu .items li:nth-child(1){
+    border-left: 4px solid white;
+
+}*/
+
+#menu .items span {
+    color: rgb(204, 208, 216);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 40px 10px 0 25px;
+    font-weight: 300px;
+}
+
+#menu .items li:hover span,
+#menu .items li:hover a {
+    color: #F3F4F6;
+}
+
+#menu .items a {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 30px;
+    border-bottom: 3px solid #594ef7;
+    position: fixed;
+    width: calc(100% - 300px);
+}
+
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .search span {
+    margin-right: 14px;
+}
+
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#interface .navigation .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#interface .navigation .profile span {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.n1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu-btn {
+    color: #2b2b2b;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+}
+
+.i-name {
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.values {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.values .val-box {
+    background-color: white;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.values .val-box span {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin-right: 15px;
+}
+
+.values .val-box:nth-child(1) span {
+    background-color: #7B74EC;
+}
+
+.values .val-box:nth-child(2) span {
+    background-color: #5C8AF0;
+}
+
+.values .val-box:nth-child(3) span {
+    background-color: #E45D99;
+}
+
+.values .val-box:nth-child(4) span {
+    background-color: #74daec;
+}
+
+.values .val-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.values .val-box p {
+    font-size: 15px;
+    color: #11141b;
+}
+
+.products {
+    width: 94%;
+    margin: 0px 0 30px 30px;
+    overflow: auto;
+    background: white;
+    border-radius: 8px;
+}
+
+.products img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.products h5 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.products p {
+    font-weight: 500;
+    font-size: 13px;
+    color: #111827;
+}
+
+.products .dress {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #eef0f3;
+}
+
+thead th {
+    text-transform: uppercase;
+    background: #F9FAFB;
+    text-align: start;
+    padding: 15px;
+}
+
+thead td {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #F9FAFB;
+    text-align: start;
+    padding: 15px;
+}
+
+tbody tr td {
+    padding: 10px 15px;
+}
+
+.enable p {
+    background: #d7fada;
+    padding: 10px 10px;
+    display: inline-block;
+    border-radius: 60px;
+    color: #2b2b2b;
+}
+
+.disenable p {
+    background: #eca5ba;
+    padding: 10px 10px;
+    display: inline-block;
+    border-radius: 60px;
+    color: #2b2b2b;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+button:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+}
+
+button i {
+    color: red;
+    font-size: 25px;
+}
+
+@media (max-width: 769px) {
+    #menu {
+        width: 270px;
+        position: fixed;
+        left: -270px;
+        transition: 0.3s ease;
+    }
+    #menu.active {
+        left: 0px;
+    }
+    #menu-btn {
+        display: initial;
+    }
+    #interface {
+        width: 100%;
+        margin-left: 0px;
+        display: inline-block;
+        transition: 0.3s ease;
+    }
+    #menu.active~#interface {
+        width: calc(100% - 270px);
+        margin-left: 270px;
+    }
+    #interface .navigation {
+        width: 100%;
+    }
+    .values {
+        padding: 30px 30px 0 30px;
+        justify-content: flex-start;
+    }
+    .values .val-box {
+        padding: 16px 20px;
+        margin: 10px 20px 10px 0;
+    }
+    .products {
+        width: 92%;
+        padding: 0;
+        overflow: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+}
+
+@media (max-width:477px) {
+    #interface .navigation {
+        padding: 15px;
+    }
+    #interface .navigation .search input {
+        width: 150px;
+    }
+    .i-name {
+        padding: 30px 15px 0 15px;
+    }
+    .values {
+        padding: 15px 15px 0 15px;
+    }
+    .values .val-box {
+        width: 100%;
+        margin: 8px 0;
+    }
+    .products {
+        margin: 30px 15px 30px 15px;
+    }
+}
+
+.d-inline {
+    display: inline;
+}
